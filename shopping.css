@@ -1,0 +1,43 @@
+body, section{
+    font-family: 'Nunito', sans-serif;
+    font-weight:bold;
+}
+.upper_section{
+    background-image: linear-gradient(to bottom, #99cd9d, #85cb88, #71c972, #5cc75a, #44c43f);
+    position:absolute;
+}
+.inner_section{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background:white;
+} 
+.one_product{
+    margin-top:20px;
+    margin-bottom: 20px;
+    line-height: 300px;
+    border-bottom: 1px solid #bbbbbb;
+}
+.one_product *{
+    margin-bottom: 20px;
+}
+.name{
+    width:20%;
+}
+.action{
+    background: transparent;
+    border: none !important;
+}
+.sum{
+    padding-top:20px;
+    padding-left:20px;
+    border-bottom: 1px solid #bbbbbb;
+}
+/* a.action{
+    color:gray;
+}
+a.action:hover{
+    color:red;
+} */
+a.heart i{
+    color:gray;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="shopping.css">
+    <script src="shopping.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" 
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" 
+    crossorigin="anonymous">    <title>Shopping Cart</title>
+</head>
+<body onload="shopping();">
+    <section class="upper_section container-fluid">
+        <section class="container inner_section rounded">
+            <div class="row sum">
+                <p>Shopping Bag Total: </p>
+                <p id="total"> 0 </p>
+                <p> $ </p>
+            </div>
+            <section id="products">
+                <div class="one_product row d-flex justify-content-around align-items-center">
+                    <button class="action"><i class="fas fa-times"></i></button>
+                    <a class="action heart" href="#"><i class="fas fa-heart"></i></a>
+                    <img class="rounded" sizes="100vw" data-srcset="https://burst.shopifycdn.com/photos/wrist-watches.jpg?width=373&amp;format=pjpg&amp;exif=0&amp;iptc=0 1x, https://burst.shopifycdn.com/photos/wrist-watches.jpg?width=746&amp;format=pjpg&amp;exif=0&amp;iptc=0 2x" data-category-handle="product" data-photo-title="Wrist Watches" data-photo-id="1315" src="https://burst.shopifycdn.com/photos/wrist-watches.jpg?width=70&amp;format=pjpg&amp;exif=0&amp;iptc=0" class="tile__image js-track-photo-stat-view js-track-photo-stat-click lazyloaded" alt="wrist watches" srcset="https://burst.shopifycdn.com/photos/wrist-watches.jpg?width=373&amp;format=pjpg&amp;exif=0&amp;iptc=0 1x, https://burst.shopifycdn.com/photos/wrist-watches.jpg?width=746&amp;format=pjpg&amp;exif=0&amp;iptc=0 2x">
+                    <p class="name">Wrist Watches</p>
+                    <button class="btn btn-dark increment">+</button>
+                    <p class="quantity">0</p>
+                    <button class="btn btn-dark decrement">-</button>
+                    <p class="price">549</p><p>$</p>
+                </div>
+                <div class="one_product row d-flex justify-content-around align-items-center">
+                    <button class="action"><i class="fas fa-times"></i></button>
+                    <a class="action heart" href="#"><i class="fas fa-heart"></i></a>
+                    <img class="rounded" sizes="100vw" data-srcset="https://burst.shopifycdn.com/photos/blue-t-shirt.jpg?width=373&amp;format=pjpg&amp;exif=0&amp;iptc=0 1x, https://burst.shopifycdn.com/photos/blue-t-shirt.jpg?width=746&amp;format=pjpg&amp;exif=0&amp;iptc=0 2x" data-category-handle="product" data-photo-title="Blue T-Shirt" data-photo-id="3298" src="https://burst.shopifycdn.com/photos/blue-t-shirt.jpg?width=70&amp;format=pjpg&amp;exif=0&amp;iptc=0" class="tile__image js-track-photo-stat-view js-track-photo-stat-click lazyloaded" alt="blue t-shirt" srcset="https://burst.shopifycdn.com/photos/blue-t-shirt.jpg?width=373&amp;format=pjpg&amp;exif=0&amp;iptc=0 1x, https://burst.shopifycdn.com/photos/blue-t-shirt.jpg?width=746&amp;format=pjpg&amp;exif=0&amp;iptc=0 2x">                    
+                    <p class="name">Blue T-shirt</p>
+                    <button class="btn btn-dark increment">+</button>
+                    <p class="quantity">0</p>
+                    <button class="btn btn-dark decrement">-</button>
+                    <p class="price">100</p><p>$</p>
+                </div>
+                <div class="one_product row d-flex justify-content-around align-items-center">
+                    <button class="action"><i class="fas fa-times"></i></button>
+                    <a class="action heart" href="#"><i class="fas fa-heart"></i></a>
+                    <img class="rounded" sizes="100vw" data-srcset="https://burst.shopifycdn.com/photos/makeup-brush-tips.jpg?width=373&amp;format=pjpg&amp;exif=0&amp;iptc=0 1x, https://burst.shopifycdn.com/photos/makeup-brush-tips.jpg?width=746&amp;format=pjpg&amp;exif=0&amp;iptc=0 2x" data-category-handle="product" data-photo-title="Makeup Brush Tips" data-photo-id="6582" src="https://burst.shopifycdn.com/photos/makeup-brush-tips.jpg?width=70&amp;format=pjpg&amp;exif=0&amp;iptc=0" class="tile__image js-track-photo-stat-view js-track-photo-stat-click lazyloaded" alt="makeup brush tips" srcset="https://burst.shopifycdn.com/photos/makeup-brush-tips.jpg?width=373&amp;format=pjpg&amp;exif=0&amp;iptc=0 1x, https://burst.shopifycdn.com/photos/makeup-brush-tips.jpg?width=746&amp;format=pjpg&amp;exif=0&amp;iptc=0 2x">
+                    <p class="name">Makeup Brush Tips</p>
+                    <button class="btn btn-dark increment">+</button>
+                    <p class="quantity">0</p>
+                    <button class="btn btn-dark decrement">-</button>
+                    <p class="price">850</p><p>$</p>
+                </div>
+                <div class="one_product row d-flex justify-content-around align-items-center">
+                    <button class="action"><i class="fas fa-times"></i></button>
+                    <a class="action heart" href="#"><i class="fas fa-heart"></i></a>
+                    <img class="rounded" sizes="100vw" data-srcset="https://burst.shopifycdn.com/photos/black-bag-over-the-shoulder.jpg?width=373&amp;format=pjpg&amp;exif=0&amp;iptc=0 1x, https://burst.shopifycdn.com/photos/black-bag-over-the-shoulder.jpg?width=746&amp;format=pjpg&amp;exif=0&amp;iptc=0 2x" data-category-handle="product" data-photo-title="Black Bag Over The Shoulder" data-photo-id="1693" src="https://burst.shopifycdn.com/photos/black-bag-over-the-shoulder.jpg?width=70&amp;format=pjpg&amp;exif=0&amp;iptc=0" class="tile__image js-track-photo-stat-view js-track-photo-stat-click lazyloaded" alt="black bag over the shoulder" srcset="https://burst.shopifycdn.com/photos/black-bag-over-the-shoulder.jpg?width=373&amp;format=pjpg&amp;exif=0&amp;iptc=0 1x, https://burst.shopifycdn.com/photos/black-bag-over-the-shoulder.jpg?width=746&amp;format=pjpg&amp;exif=0&amp;iptc=0 2x">
+                    <p class="name">Black bag over shoulder</p>
+                    <button class="btn btn-dark increment">+</button>
+                    <p class="quantity">0</p>
+                    <button class="btn btn-dark decrement">-</button>
+                    <p class="price">230</p><p>$</p>
+                </div>
+            </section>
+        </section>
+    </section>
+</body>
+</html>
